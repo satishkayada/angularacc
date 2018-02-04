@@ -1,0 +1,14 @@
+<div *ngIf="account">
+    <button (click)="goBack()">go back</button>
+    <h2>{{ account.name}} Details</h2>
+     <div><span>id: </span>{{account.id}}</div>
+     <div>
+       <label>Name
+         <input [(ngModel)]="account.name" placeholder="name">
+       </label>
+       <label>Balance
+        <input [(ngModel)]="account.balance" placeholder="Balance">
+      </label>
+      </div>
+     
+</div>

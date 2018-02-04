@@ -1,0 +1,30 @@
+
+<h2>Account Detail</h2>
+<ul class="accounts">
+    <li *ngFor="let account of accounts">
+    <a routerLink="/detail/{{account.id}}">
+    <span class="badge">{{account.id}}</span>
+    {{account.name}}
+    </a>
+    </li>
+</ul>
+
+    <!-- [class.selected]="account === selectedAccount"
+    (click)="onSelect(account)"> -->
+
+<!-- <app-account-detail [account]="selectedAccount"></app-account-detail> -->
+
+<!-- 
+<div>
+   <ul class="accounts" *ngFor="let account of accounts">
+      <li [class.selected]="account === selectedAccount"(click)="onSelect(account)">
+          <input [(ngModel)]="account.id" placeholder="Account Name"> 
+      </li>
+      <li>
+      <input [(ngModel)]="account.name" placeholder="Account Name"> 
+      </li>
+   </ul>
+</div> -->
+<!-- <h2>{{ account.name | uppercase }} Details</h2>
+<div><span>id: </span>{{account.id}}</div>
+<div><span>name: </span>{{account.name}}</div> -->
