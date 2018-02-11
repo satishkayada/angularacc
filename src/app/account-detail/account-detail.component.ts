@@ -30,6 +30,10 @@ export class AccountDetailComponent implements OnInit {
   goBack(): void {
     this.location.back();
   }
+  Save(): void {
+    this.accountservice.putAccount(account)
+      .subscribe(account => this.account=account);
+  }
 }
 
 // import { Component, OnInit,Input } from '@angular/core';
